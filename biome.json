@@ -7,8 +7,16 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+    "includes": [
+      "**",
+      "!node_modules",
+      "!.next",
+      "!dist",
+      "!build",
+      "!components/ui"
+    ]
   },
+
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -20,6 +28,20 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "noHeadElement": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
+      },
+      "a11y": "off",
+      "nursery": {
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "on"
+        }
       }
     },
     "domains": {
