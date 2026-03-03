@@ -9,14 +9,14 @@ const nextConfig: NextConfig = {
         // exclude /api path
         source: "/:path((?!api).*)*",
         destination: "/spa",
-        has: [
-          {
-            type: "header",
-            key: "x-invoke-method",
-            //  Only handle GET requests
-            value: "GET",
-          },
-        ],
+        // has: [
+        //   {
+        //     type: "header",
+        //     key: "x-invoke-method",
+        //     //  Only handle GET requests
+        //     value: "GET",
+        //   },
+        // ],
       },
     ];
   },
