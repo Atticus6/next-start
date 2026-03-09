@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        // exclude /api path
-        source: "/:path((?!api).*)*",
+        // exclude /api and /.well-known paths
+        source: "/:path((?!api|.well-known).*)*",
         destination: "/spa",
         // has: [
         //   {
